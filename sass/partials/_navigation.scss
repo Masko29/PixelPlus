@@ -1,0 +1,39 @@
+.navigation {
+  font-size: $fs-xs;
+  color: $main-text-color;
+  text-decoration: underline;
+
+  cursor: pointer;
+  ul {
+    min-height: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .nav-menu{
+      position: relative;
+      padding: 0 10px;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:after {
+        content: '/';
+        position: absolute;
+        right: 0;
+      }
+    }
+    #nav-cat-menu {
+      padding: 0 10px;
+      display: none;
+      position: relative;
+      &:after {
+        content: '/';
+        right: 0;
+        position: absolute;
+      }
+    }
+    #nav-cat-submenu {
+      padding: 0 10px;
+    }
+  }
+}

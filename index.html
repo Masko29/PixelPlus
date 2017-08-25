@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet">
+    <link rel="stylesheet" href="libs/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owl/owl.theme.default.min.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <script src="libs/jquery/jquery.min.js" defer></script>
+    <script src="libs/owl/owl.carousel.min.js" defer></script>
+    <script src="js/common.js" defer></script>
+    <title>PixelPlus</title>
+</head>
+<body>
+<section class="wrapper">
+<header>
+    <div class="container">
+        <div class="row contacts">
+            <div class="logo">
+                <img src="img/logo.png" alt="logotype">
+            </div>
+            <div class="contact-us">
+                <p class="phone">+7(499) 777-77-77</p>
+                <p class="phone">+7(499) 777-77-77</p>
+                <a href="javascript:PopUpShow()" class="feedback">Обратная связь</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="popup" id="popup1">
+        <div class="form_box">
+            <a href="javascript:PopUpHide()"><img src="img/close.png" alt="close"></a>
+            <form action="#" method="post" class="rf">
+                <span>ОБРАТНАЯ СВЯЗЬ</span>
+
+                <label for="user_name">*Имя</label>
+                <input type="text" class="rfield" id="user_name" />
+
+                <label for="user_family">*Телефон</label>
+                <input type="text" class="rfield" id="user_family" />
+
+                <label for="user_phone">*Email</label>
+                <input type="text" class="rfield" id="user_phone" />
+
+                <label for="user_work">Cообщение</label>
+                <textarea id="user_work"></textarea>
+
+                <input type="submit" class="btn_submit disabled" value="ОТПРАВИТЬ" />
+
+            </form>
+        </div>
+    </div>
+</header>
+<section class="central-block">
+    <div class="top-menu">
+        <div class="container">
+            <div class="row">
+                <nav class="menu visible-lg visible-md visible-sm">
+                    <ul>
+                        <li class="home"><a href="#">Главная</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Доставка и оплата </a></li>
+                        <li><a href="#">Прайс-лист </a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <nav class="nav visible-xs">
+                    <div class="hamburger-container">
+                        <ul class="hamburger">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <ul id="menu">
+                        <li class="home"><a href="#">Главная</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Доставка и оплата </a></li>
+                        <li><a href="#">Прайс-лист </a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="slider">
+        <div id="top" class="owl-carousel">
+            <div class="top-owl-item">
+                <img src="img/slide1.png" alt="slide1">
+            </div>
+            <div class="top-owl-item">
+                <img src="img/slide2.png" alt="slide2">
+            </div>
+        </div>
+    </div>
+    <div class="navigation">
+        <div class="container">
+            <div class="row">
+                <ul>
+                    <li class="nav-menu">Главная</li>
+                    <li class="nav-menu">Каталог</li>
+                    <li id="nav-cat-menu"></li>
+                    <li id="nav-cat-submenu"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="catalog">
+        <div class="container">
+            <div class="row cat">
+                <div class="catalog-left">
+                    <div class="catalog-nav">
+                        <ul>
+                            <li class="cat-menu-item" data-name="Автомобили">Автомобили</li>
+                            <li class="cat-menu-item" data-name="Бытовая техника">Бытовая техника
+                                <ul class="submenu">
+                                    <li class="cat-submenu-item" data-name="Микроволновки">Микроволновки</li>
+                                    <li class="cat-submenu-item" data-name="Холодильники">Холодильники</li>
+                                    <li class="cat-submenu-item" data-name="Посудомоечные машины">Посудомоечные машины</li>
+                                    <li class="cat-submenu-item" data-name="Чайники">Чайники</li>
+                                </ul>
+                            <li class="cat-menu-item" data-name="Мобильная техника">Мобильная техника</li>
+                            <li class="cat-menu-item" data-name="Компьютеры">Компьютеры</li>
+                            <li class="cat-menu-item" data-name="Одежда">Одежда</li>
+                            <li class="cat-menu-item" data-name="Недвижимость">Недвижимость</li>
+                        </ul>
+                    </div>
+                    <div class="price-list">
+                        <div class="excel"><img src="img/excel.png" alt="price"></div>
+                        <p>Прайс-лист</p>
+                    </div>
+                </div>
+                <div class="catalog-right">
+                    <div class="catalog-item">
+                        <img class="cat-photo" src="img/nophoto.png" alt="photo">
+                        <p class="kettle">Самый клевый чайник, который надо купить!</p>
+                        <span class="price">1 900 p.</span>
+                        <img class="basket" src="img/basket_mini.png" alt="basket">
+                    </div>
+                    <div class="catalog-item">
+                        <img class="cat-photo" src="img/nophoto.png" alt="photo">
+                        <p class="kettle">Самый клевый чайник, который надо купить!</p>
+                        <span class="price">1 900 p.</span>
+                        <img class="basket" src="img/basket_mini.png" alt="basket">
+                    </div>
+                    <div class="page-number visible-sm visible-xs">
+                        <span class="number">1</span>
+                        <span class="number">2</span>
+                        <span class="number">3</span>
+                        <span class="number">4</span>
+                        <span class="number">5</span>
+                        <span class="number">6</span>
+                        <span class="number">7</span>
+                    </div>
+                    <div class="catalog-item">
+                        <img class="cat-photo" src="img/nophoto.png" alt="photo">
+                        <p class="kettle">Самый клевый чайник, который надо купить!</p>
+                        <span class="price">1 900 p.</span>
+                        <img class="basket" src="img/basket_mini.png" alt="basket">
+                    </div>
+                    <div class="catalog-item">
+                        <img class="cat-photo" src="img/nophoto.png" alt="photo">
+                        <p class="kettle">Самый клевый чайник, который надо купить!</p>
+                        <span class="price">1 900 p.</span>
+                        <img class="basket" src="img/basket_mini.png" alt="basket">
+                    </div>
+                    <div class="catalog-item">
+                        <img class="cat-photo" src="img/nophoto.png" alt="photo">
+                        <p class="kettle">Самый клевый чайник, который надо купить!</p>
+                        <span class="price">1 900 p.</span>
+                        <img class="basket" src="img/basket_mini.png" alt="basket">
+                    </div>
+                    <div class="page-number">
+                        <span class="number">1</span>
+                        <span class="number">2</span>
+                        <span class="number">3</span>
+                        <span class="number">4</span>
+                        <span class="number">5</span>
+                        <span class="number">6</span>
+                        <span class="number">7</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="content">
+                <div class="space"></div>
+                <div class="cont-block left">
+                    <p>
+                        Компания «Пиксель Плюс» существует более 6 лет,
+                        за это время мы принимали участие в разработке
+                        более чем 700 сайтов, поэтому можем уверенно
+                        называть себя профессионалами. На данный момент
+                        наш коллектив состоит из более чем 30 сотрудников
+                        работающих в двух офисах в Москве и Зеленограде.
+                        характерные для этого жанра мотивы: неразделённой
+                        любви, ухода молодости, угасания души.
+                    </p>
+                </div>
+                <div class="cont-block right">
+                    <p>
+                        Одним из основных направлений работ нашей компании
+                        является поисковое продвижение сайтов, на данной момент
+                        мы работаем с более чем 150 постоянными клиентами по
+                        более чем 11 000 поисковым запросам. При этом в работе
+                        основной акцент мы делаем на качестве работ, а так же
+                        применяем собственные уникальные разработки в области
+                        SEO продвижения. На данный момент отдел SEO состоит из
+                        9 человек под руководством ведущего специалиста,
+                        преимущественно работающих в нашем московском офисе.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row bottom">
+            <div class="copyright">
+
+                    © 2012–2013 ЗАО «Компания»<br>
+                info@name.ru
+                </span>
+            </div>
+            <div class="nav-footer">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Доставка и оплата </a></li>
+                    <li><a href="#">Прайс-лист </a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="logo-footer">
+                <span>
+                    <u>Разработка сайта</u> -<br> компания «Пиксель Плюс»
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>
+</section>
+<script src="libs/jquery/jquery.min.js" defer></script>
+<script src="libs/owl/owl.carousel.min.js" defer></script>
+</body>
+</html>

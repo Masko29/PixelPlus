@@ -1,0 +1,32 @@
+.central-block {
+  .top-menu {
+    background-color: $menu-gray-bg;
+    .menu {
+      ul {
+        font-size: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 80px;
+        height: 100%;
+        li {
+          border-right: 2px solid $white;
+          font-size: $fs-xl;
+          &:last-child {
+            border-right: none;
+          }
+          a {
+            text-decoration: none;
+            color: $white;
+            padding: 15px 26px;
+            line-height: 1.3;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}

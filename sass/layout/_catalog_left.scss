@@ -1,0 +1,53 @@
+.catalog-left {
+  display: inline-block;
+  max-width: 220px;
+  width: 100%;
+  .catalog-nav {
+    font-size: $fs-s;
+    color: $main-text-color;
+    ul {
+      .cat-menu-item {
+        cursor: pointer;
+        position: relative;
+        &:active .submenu {
+          display: block;
+        }
+        &:focus .submenu {
+          display: block;
+          text-decoration: underline;
+        }
+      }
+      .cat-menu-item.active ul {
+        display: block
+      }
+      .submenu {
+        position: relative;
+        left: 25px;
+        list-style: disc;
+        display: none;
+        font-size: $fs-xs;
+        .cat-submenu-item {
+          cursor: pointer;
+          &:hover {
+            color: $active-catalog;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .price-list {
+    max-width: 150px;
+    width: 100%;
+    margin-top: 80px;
+    cursor: pointer;
+    .excel {
+      text-align: center;
+    }
+    p {
+      font-size: $fs-xl;
+      color: $price-activeNumberPage;
+
+    }
+  }
+}

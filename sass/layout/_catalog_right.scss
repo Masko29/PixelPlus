@@ -1,0 +1,58 @@
+.catalog {
+  margin-bottom: 40px;
+  .cat {
+    display: flex;
+    flex-direction: row;
+    .catalog-right {
+      .catalog-item {
+        padding: 20px;
+        float: none;
+        max-width: 250px;
+        height: 380px;
+        width: 100%;
+        background-color: $header-catalogPhotos-bg;
+        display: inline-block;
+        margin: 5px auto;
+        .cat-photo {
+          max-width: 210px;
+          max-height: 210px
+        }
+        .kettle {
+          font-size: $fs-s;
+          color: $main-text-color;
+          margin: 15px 0 45px;
+        }
+        .price {
+          font-size: $fs-l;
+          color: $price-activeNumberPage;
+          font-weight: 700;
+          position: relative;
+        }
+        .basket {
+          cursor: pointer;
+          margin: 0 0 -2px 75px;
+        }
+      }
+      .page-number {
+        margin: 20px auto;
+        max-width: 210px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        cursor: pointer;
+        .number {
+          font-size: $fs-xs;
+          color: $content-pageNumber;
+          width: 30px;
+          height: 30px;
+          padding: 9px;
+          &:hover {
+            font-size: $fs-s;
+            color: $price-activeNumberPage;
+          }
+        }
+      }
+    }
+  }
+}

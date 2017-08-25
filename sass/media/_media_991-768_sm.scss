@@ -1,0 +1,26 @@
+@media (max-width: 991px) {
+
+  .central-block {
+    .top-menu {
+      .menu {
+        ul {
+          li {
+            border-right: 2px solid $white;
+            font-size: $fs-s;
+            a {
+              padding: 15px 31px;
+            }
+          }
+        }
+      }
+    }
+    .catalog {
+      .cat {
+        .catalog-right {
+          max-height: 430px;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
